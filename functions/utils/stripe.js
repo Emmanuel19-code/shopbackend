@@ -1,5 +1,7 @@
 import Stripe from "stripe";
 
-const stripe = new Stripe("sk_test_26PHem9AhJZvU623DfE1x4sd");
+const stripe = new Stripe(
+  ` ${process.env.STRIPE_KEY}`
+);
 
 export default stripe;
