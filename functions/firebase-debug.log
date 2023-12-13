@@ -1,0 +1,254 @@
+[debug] [2023-12-13T10:02:17.791Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T10:02:17.796Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KWAME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-12-13T10:02:17.796Z] CLI Version:   13.0.1
+[debug] [2023-12-13T10:02:17.797Z] Platform:      win32
+[debug] [2023-12-13T10:02:17.797Z] Node Version:  v20.10.0
+[debug] [2023-12-13T10:02:17.798Z] Time:          Wed Dec 13 2023 10:02:17 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-12-13T10:02:17.798Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T10:02:18.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T10:02:18.028Z] > authorizing via signed-in user (sakakwame2002@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-12-13T10:02:18.048Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-13T10:02:18.049Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-12-13T10:02:18.066Z] [hub] writing locator at C:\Users\KWAME\AppData\Local\Temp\hub-cakeappserver.json
+[debug] [2023-12-13T10:02:18.139Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-13T10:02:18.139Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-13T10:02:18.140Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-12-13T10:02:18.146Z] defaultcredentials: writing to file C:\Users\KWAME\AppData\Roaming\firebase\sakakwame2002_gmail_com_application_default_credentials.json
+[debug] [2023-12-13T10:02:18.149Z] Setting GAC to C:\Users\KWAME\AppData\Roaming\firebase\sakakwame2002_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\KWAME\\AppData\\Roaming\\firebase\\sakakwame2002_gmail_com_application_default_credentials.json"}}
+[debug] [2023-12-13T10:02:18.152Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cakeappserver/adminSdkConfig [none]
+[debug] [2023-12-13T10:02:19.058Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cakeappserver/adminSdkConfig 403
+[debug] [2023-12-13T10:02:19.058Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cakeappserver/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-12-13T10:02:19.058Z] Failed to get Admin SDK config for cakeappserver, falling back to cache Failed to get Admin SDK for Firebase project cakeappserver. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project cakeappserver. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"HTTP Error: 403, The caller does not have permission","status":403},"status":500}
+[warn] !  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-12-13T10:02:19.089Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2023-12-13T10:02:19.535Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-12-13T10:02:19.536Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-12-13T10:02:20.915Z] Data is 3064105
+[debug] [2023-12-13T10:02:20.915Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:20.915Z] [unzip] Processing entry: client\
+[debug] [2023-12-13T10:02:20.915Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2023-12-13T10:02:20.916Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-12-13T10:02:20.917Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-12-13T10:02:20.917Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:20.917Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2023-12-13T10:02:20.924Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-12-13T10:02:20.924Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-12-13T10:02:20.924Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:20.924Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2023-12-13T10:02:20.927Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-12-13T10:02:20.927Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-12-13T10:02:20.927Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:20.927Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2023-12-13T10:02:20.930Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:20.930Z] [unzip] Processing entry: client\assets\
+[debug] [2023-12-13T10:02:20.931Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2023-12-13T10:02:20.931Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:20.932Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-12-13T10:02:20.932Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2023-12-13T10:02:20.932Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-12-13T10:02:20.933Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-12-13T10:02:20.933Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2023-12-13T10:02:20.933Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2023-12-13T10:02:20.935Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-12-13T10:02:20.935Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2023-12-13T10:02:20.935Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-12-13T10:02:20.935Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2023-12-13T10:02:20.938Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-12-13T10:02:20.939Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2023-12-13T10:02:20.939Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-12-13T10:02:20.939Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2023-12-13T10:02:20.952Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:20.952Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-12-13T10:02:20.952Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2023-12-13T10:02:20.953Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-12-13T10:02:20.954Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-12-13T10:02:20.954Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.954Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-12-13T10:02:20.956Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-12-13T10:02:20.956Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-12-13T10:02:20.956Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.956Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-12-13T10:02:20.958Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-12-13T10:02:20.959Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-12-13T10:02:20.959Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.959Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-12-13T10:02:20.961Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-12-13T10:02:20.961Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-12-13T10:02:20.961Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.962Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-12-13T10:02:20.963Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-12-13T10:02:20.964Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-12-13T10:02:20.964Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.964Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-12-13T10:02:20.966Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-12-13T10:02:20.966Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-12-13T10:02:20.967Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.967Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-12-13T10:02:20.969Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-12-13T10:02:20.969Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-12-13T10:02:20.969Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.970Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-12-13T10:02:20.971Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-12-13T10:02:20.971Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-12-13T10:02:20.971Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.972Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-12-13T10:02:20.973Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-12-13T10:02:20.974Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-12-13T10:02:20.974Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.974Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-12-13T10:02:20.976Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-12-13T10:02:20.976Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-12-13T10:02:20.976Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.976Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-12-13T10:02:20.978Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-12-13T10:02:20.978Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-12-13T10:02:20.978Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.979Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-12-13T10:02:20.980Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-12-13T10:02:20.981Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-12-13T10:02:20.981Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.981Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-12-13T10:02:20.983Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-12-13T10:02:20.983Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-12-13T10:02:20.983Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-12-13T10:02:20.983Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-12-13T10:02:20.985Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-12-13T10:02:20.985Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2023-12-13T10:02:20.985Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-12-13T10:02:20.986Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2023-12-13T10:02:21.052Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:21.052Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-12-13T10:02:21.052Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2023-12-13T10:02:21.053Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-12-13T10:02:21.053Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-12-13T10:02:21.053Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2023-12-13T10:02:21.054Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2023-12-13T10:02:21.058Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-12-13T10:02:21.058Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-12-13T10:02:21.058Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.058Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2023-12-13T10:02:21.060Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-12-13T10:02:21.061Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-12-13T10:02:21.061Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.061Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2023-12-13T10:02:21.063Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-12-13T10:02:21.063Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-12-13T10:02:21.064Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.064Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2023-12-13T10:02:21.066Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-12-13T10:02:21.066Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-12-13T10:02:21.066Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.067Z] [unzip] Writing file: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2023-12-13T10:02:21.068Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-12-13T10:02:21.069Z] [unzip] Processing entry: client\index.html
+[debug] [2023-12-13T10:02:21.069Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.069Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2023-12-13T10:02:21.071Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-12-13T10:02:21.071Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-12-13T10:02:21.071Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.072Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2023-12-13T10:02:21.073Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-12-13T10:02:21.074Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-12-13T10:02:21.075Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.075Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2023-12-13T10:02:21.077Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-12-13T10:02:21.077Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-12-13T10:02:21.077Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.078Z] [unzip] Writing file: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2023-12-13T10:02:21.079Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-12-13T10:02:21.079Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-12-13T10:02:21.079Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-12-13T10:02:21.080Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2023-12-13T10:02:21.082Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-12-13T10:02:21.082Z] [unzip] Processing entry: server\
+[debug] [2023-12-13T10:02:21.082Z] [unzip] mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2023-12-13T10:02:21.082Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-12-13T10:02:21.083Z] [unzip] Processing entry: server\server.js
+[debug] [2023-12-13T10:02:21.083Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-12-13T10:02:21.083Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2023-12-13T10:02:21.102Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-12-13T10:02:21.102Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-12-13T10:02:21.102Z] [unzip] else mkdir: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-12-13T10:02:21.103Z] [unzip] deflating: C:\Users\KWAME\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2023-12-13T10:02:21.113Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-13T10:02:21.114Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-12-13T10:02:21.114Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\KWAME\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\KWAME\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-12-13T10:02:21.338Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-12-13T10:02:21.338Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\KWAME\OneDrive\Documents\personal\node\shopbackend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\KWAME\\OneDrive\\Documents\\personal\\node\\shopbackend\\functions\" for Cloud Functions..."}}
+[debug] [2023-12-13T10:02:21.393Z] Validating nodejs source
+[debug] [2023-12-13T10:02:23.859Z] > [functions] package.json contents: {
+  "type": "module",
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "http-status-codes": "^2.3.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.1",
+    "nodemailer": "^6.9.7",
+    "stripe": "^14.5.0",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-13T10:02:23.860Z] Building nodejs source
+[debug] [2023-12-13T10:02:23.861Z] Failed to find version of module node: reached end of search path C:\Users\KWAME\OneDrive\Documents\personal\node\shopbackend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-13T10:02:23.866Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-13T10:02:23.876Z] Found firebase-functions binary at 'C:\Users\KWAME\OneDrive\Documents\personal\node\shopbackend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8859
+
+[debug] [2023-12-13T10:02:26.273Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] connected to the database
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/cakeappserver/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/cakeappserver/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
