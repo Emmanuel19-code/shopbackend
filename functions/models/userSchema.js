@@ -38,7 +38,7 @@ const userSchema = new mongoose.Schema(
     },
     favorites: [
       {
-        productid: String,
+        product_id: String,
       },
     ],
   },

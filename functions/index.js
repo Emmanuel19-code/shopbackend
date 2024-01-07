@@ -4,10 +4,10 @@ import cookieParser from "cookie-parser";
 import { connection } from "./database connections/mongooseconnect.js";
 import {} from "dotenv/config";
 import cloudinaryconnect from "./database connections/cloudinaryconnect.js";
-import AuthRoute from "./AuthenticationSection/authroute/routes.js";
-import ProfileRoute from "./ProfileSection/profile route/routes.js";
-import ProductRoute from "./ProductSession/product route/routes.js";
-import PaymentRoute from "./PaymentsSection/payment route/routes.js"
+import AuthRoute from "./AuthSection/routes.js"
+import ProfileRoute from "./ProfileSection/routes.js"
+import ProductRoute from "./ProductSection/routes.js"
+import PaymentRoute from "./PaymentsSection/routes.js"
 import functions from "firebase-functions"
 
 
